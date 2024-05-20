@@ -10,9 +10,15 @@
         height: 100px;
         background-color: linear-gradient(to right, red, yellow);
         position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
     }
     body {
-        background: linear-gradient(to right, cyan, blue);
+        background: linear-gradient(to right, cyan, black);
         margin: 0; /* Added to remove default body margin */
     }
 </style>
@@ -24,7 +30,7 @@
     <input type="number" id="positiontop" name="positiontop">
     <button onclick="moveDiv()">Move Div</button>
 
-    <div id="movingDiv">This is the moving div</div>
+    <div id="movingDiv">Ping: <span id="pingValue">0</span> ms</div>
 
     <script>
         function moveDiv() {
@@ -33,14 +39,30 @@
             const modValueX = value % window.innerWidth; // Mod width of viewport
             const modValueY = valuex % window.innerHeight; // Mod height of viewport
             
-            const div = document.getElementById("movingDiv");
-            div.style.left = modValueX + "px";
-            div.style.top = modValueY + "px";
-            
-            if (div.style.top === "69px") { // Corrected comparison operator
-                console.log("gay man");
-            }
+            moveDivPosition(modValueX, modValueY);
+            updatePing();
         }
+
+        function moveDivPosition(x, y) {
+            const div = document.getElementById("movingDiv");
+            div.style.left = x + "px";
+            div.style.top = y + "px";
+        }
+
+        function updatePing() {
+            const pingValue = document.getElementById("pingValue");
+            const ping = calculatePing(); // You need to implement this function
+            pingValue.textContent = ping;
+        }
+
+        // Dummy function to simulate calculating ping
+        function calculatePing() {
+            // You can replace this with your actual ping calculation logic
+            return Math.floor(Math.random() * 100) + 1; // Random number between 1 and 100
+        }
+
+        // Update ping every 10 seconds
+        setInterval(updatePing, 10000); // 10000 milliseconds = 10 seconds
     </script>
 </body>
 </html>
