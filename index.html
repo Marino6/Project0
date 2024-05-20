@@ -8,7 +8,7 @@
     #movingDiv {
         width: 100px;
         height: 100px;
-         background-color: linear-gradient(to right, red, yellow);
+        background-color: linear-gradient(to right, red, yellow);
         position: absolute;
     }
     body {
@@ -18,10 +18,10 @@
 </style>
 </head>
 <body>
-    <label for="positionleft">Enter a value:</label>
-    <label for="positiontop"> Enter a value for top:</label>
+    <label for="positionleft">Enter a value for left:</label>
     <input type="number" id="positionleft" name="positionleft">
-     <input type="number" id="positiontop" name="positiontop">
+    <label for="positiontop"> Enter a value for top:</label>
+    <input type="number" id="positiontop" name="positiontop">
     <button onclick="moveDiv()">Move Div</button>
 
     <div id="movingDiv"></div>
