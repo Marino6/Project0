@@ -27,11 +27,15 @@
         function moveDiv() {
             const value = parseInt(document.getElementById("positionValue").value);
             const modValue = value % 1920; // Mod 1920
-
+            const modvalue = value % 1080
+            
             const div = document.getElementById("movingDiv");
             div.style.left = modValue + "px";
-            div.style.top = modValue + "px";
-        }
+            div.style.top = modvalue + "px";
+            if (div.style.top = 69 + "px")
+            {
+            console.log("gay man");
+            }
     </script>
 </body>
 </html>
