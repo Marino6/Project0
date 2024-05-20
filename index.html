@@ -8,11 +8,12 @@
     #movingDiv {
         width: 100px;
         height: 100px;
-         background-color: red;
+        background-color: red;
         position: absolute;
     }
     body {
-     background: linear-gradient(to right, red, yellow)
+        background: linear-gradient(to right, red, yellow);
+        margin: 0; /* Added to remove default body margin */
     }
 </style>
 </head>
@@ -26,16 +27,17 @@
     <script>
         function moveDiv() {
             const value = parseInt(document.getElementById("positionValue").value);
-            const modValue = value % 1920; // Mod 1920
-            const modvalue = value % 1080
+            const modValueX = value % window.innerWidth; // Mod width of viewport
+            const modValueY = value % window.innerHeight; // Mod height of viewport
             
             const div = document.getElementById("movingDiv");
-            div.style.left = modValue + "px";
-            div.style.top = modvalue + "px";
-            if (div.style.top = 69 + "px")
-            {
-            console.log("gay man");
+            div.style.left = modValueX + "px";
+            div.style.top = modValueY + "px";
+            
+            if (div.style.top === "69px") { // Corrected comparison operator
+                console.log("gay man");
             }
+        }
     </script>
 </body>
 </html>
