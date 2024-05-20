@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Position Modifier</title>
+<style>
+    #movingDiv {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        position: absolute;
+    }
+</style>
+</head>
+<body>
+    <label for="positionValue">Enter a value:</label>
+    <input type="number" id="positionValue" name="positionValue">
+    <button onclick="moveDiv()">Move Div</button>
+
+    <div id="movingDiv"></div>
+
+    <script>
+        function moveDiv() {
+            const value = parseInt(document.getElementById("positionValue").value);
+            const modValue = value % 1920; // Mod 1920
+
+            const div = document.getElementById("movingDiv");
+            div.style.left = modValue + "px";
+        }
+    </script>
+</body>
+</html>
