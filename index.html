@@ -18,17 +18,20 @@
 </style>
 </head>
 <body>
-    <label for="positionValue">Enter a value:</label>
-    <input type="number" id="positionValue" name="positionValue">
+    <label for="positionleft">Enter a value:</label>
+    <label for="positiontop"> Enter a value for top:</label>
+    <input type="number" id="positionleft" name="positionleft">
+     <input type="number" id="positiontop" name="positiontop">
     <button onclick="moveDiv()">Move Div</button>
 
     <div id="movingDiv"></div>
 
     <script>
         function moveDiv() {
-            const value = parseInt(document.getElementById("positionValue").value);
+            const value = parseInt(document.getElementById("positionleft").value);
+            const valuex = parseInt(document.getElementById("positiontop").value);
             const modValueX = value % window.innerWidth; // Mod width of viewport
-            const modValueY = value % window.innerHeight; // Mod height of viewport
+            const modValueY = valuex % window.innerHeight; // Mod height of viewport
             
             const div = document.getElementById("movingDiv");
             div.style.left = modValueX + "px";
