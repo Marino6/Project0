@@ -1,5 +1,4 @@
-onst moveableButton = document.getElementById('moveableButton');
-
+const moveableButton = document.getElementById('moveableButton');
 let isMoving = false;
 
 moveableButton.addEventListener('click', () => {
