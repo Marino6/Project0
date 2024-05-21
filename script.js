@@ -1,8 +1,7 @@
-function colorChange()
-{
- var colorInput = document.getElementById('color');
-            var colorValue = colorInput.value;
-     body.style.backgroundColor = "#" + colorValue;
+function colorChange() {
+    var colorInput = document.getElementById('color');
+    var colorValue = colorInput.value;
+    document.body.style.backgroundColor = "#" + colorValue;
 }
 
 const moveableButton = document.getElementById('moveableButton');
@@ -20,4 +19,3 @@ function moveButton(event) {
     moveableButton.style.left = mouseX + 'px';
     moveableButton.style.top = mouseY + 'px';
 }
-
