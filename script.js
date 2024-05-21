@@ -4,11 +4,7 @@ function colorChange() {
     document.body.style.backgroundColor = "#" + colorValue;
 }
 
-const moveableButton = document.getElementById('moveableButton');
 
-moveableButton.addEventListener('click', (event) => {
-    moveableButton.style.transition = 'none';
-});
 
 function moveButton(event) {
     const mouseX = event.clientX;
@@ -16,3 +12,8 @@ function moveButton(event) {
     moveableButton.style.left = mouseX + 'px';
     moveableButton.style.top = mouseY + 'px';
 }
+const button = document.getElementById("moveableButton");
+button.addEventListener("click", moveButton);
+
+
+
