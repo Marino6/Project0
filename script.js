@@ -10,8 +10,6 @@ moveableButton.addEventListener('click', (event) => {
     moveableButton.style.transition = 'none';
 });
 
-document.addEventListener('mousemove', moveButton);
-
 function moveButton(event) {
     const mouseX = event.clientX;
     const mouseY = event.clientY;
