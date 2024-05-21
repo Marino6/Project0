@@ -1,18 +1,16 @@
-function colorChange()
-{
- var colorInput = document.getElementById('color');
-            var colorValue = colorInput.value;
-     body.style.backgroundColor = "#" + colorValue;
-}
+onst moveableButton = document.getElementById('moveableButton');
 
-const moveableButton = document.getElementById('moveableButton');
+let isMoving = false;
 
-moveableButton.addEventListener('click', (event) => {
-    moveableButton.style.transition = 'none';
-    moveButton(event);
+moveableButton.addEventListener('click', () => {
+    if (!isMoving) {
+        document.addEventListener('mousemove', moveButton);
+        isMoving = true;
+    } else {
+        document.removeEventListener('mousemove', moveButton);
+        isMoving = false;
+    }
 });
-
-document.addEventListener('mousemove', moveButton);
 
 function moveButton(event) {
     const mouseX = event.clientX;
@@ -20,4 +18,3 @@ function moveButton(event) {
     moveableButton.style.left = mouseX + 'px';
     moveableButton.style.top = mouseY + 'px';
 }
-
