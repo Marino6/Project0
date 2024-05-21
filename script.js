@@ -1,12 +1,6 @@
 function colorChange()
 {
-var body = document.getElementById('body');
-var labelColor = document.getElementById('color');
-var labelText = labelColor.textContent;
-
-body.style.backgroundColor = "#" +  labelText;
+ var colorInput = document.getElementById('color');
+            var colorValue = colorInput.value;
+     body.style.backgroundColor = "#" + colorValue;
 }
-
-var button = document.getElementById('colorChange');
-
-        button.addEventListener('click', handleClick);
