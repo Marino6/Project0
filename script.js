@@ -8,10 +8,8 @@ const moveableButton = document.getElementById('moveableButton');
 
 moveableButton.addEventListener('click', (event) => {
     moveableButton.style.transition = 'none';
-    moveButton(event);
+    document.removeEventListener('mousemove', moveButton); // Remove the event listener
 });
-
-document.addEventListener('mousemove', moveButton);
 
 function moveButton(event) {
     const mouseX = event.clientX;
