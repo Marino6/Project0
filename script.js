@@ -1,37 +1,23 @@
-const moveableButton = document.getElementById('moveableButton');
-let isMoving = false;
+function colorChange()
+{
+ var colorInput = document.getElementById('color');
+            var colorValue = colorInput.value;
+     body.style.backgroundColor = "#" + colorValue;
+}
 
-moveableButton.addEventListener('click', () => {
-    if (!isMoving) {
-        document.addEventListener('mousemove', moveButton);
-        isMoving = true;
-    } else {
-        document.removeEventListener('mousemove', moveButton);
-        isMoving = false;
-    }
+const moveableButton = document.getElementById('moveableButton');
+
+moveableButton.addEventListener('click', (event) => {
+    moveableButton.style.transition = 'none';
+    moveButton(event);
 });
 
-const moveableDiv = document.getElementById('moveableDiv');
-let isMoving = false;
+document.addEventListener('mousemove', moveButton);
 
-moveableDiv.addEventListener('mousedown', startDrag);
-document.addEventListener('mouseup', endDrag);
-
-function startDrag(event) {
-    isMoving = true;
-    document.addEventListener('mousemove', moveDiv);
+function moveButton(event) {
+    const mouseX = event.clientX;
+    const mouseY = event.clientY;
+    moveableButton.style.left = mouseX + 'px';
+    moveableButton.style.top = mouseY + 'px';
 }
 
-function endDrag(event) {
-    isMoving = false;
-    document.removeEventListener('mousemove', moveDiv);
-}
-
-function moveDiv(event) {
-    if (isMoving) {
-        const mouseX = event.clientX;
-        const mouseY = event.clientY;
-        moveableDiv.style.left = mouseX + 'px';
-        moveableDiv.style.top = mouseY + 'px';
-    }
-}
