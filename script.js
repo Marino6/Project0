@@ -1,7 +1,7 @@
-
+ var colorInput = document.getElementById('color');
     var colorValue = colorInput.value;
 function colorChange() {
-    var colorInput = document.getElementById('color');
+   
     document.body.style.backgroundColor = "#" + colorValue;
 }
 
