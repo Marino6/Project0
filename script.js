@@ -21,8 +21,8 @@ function garbage(event) {
         // Update the top position of the button to move it downward
         moveableButton.style.top = (mouseY + 3) + "px"; // Move downward
     } else {
-        // Update the top position of the button to match the mouse position
-        moveableButton.style.top = mouseY + "px";
+        // Update the top position of the button to move it upward
+        moveableButton.style.top = (mouseY - 3) + "px"; // Move upward
     }
 }
 
