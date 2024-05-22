@@ -14,12 +14,16 @@ function garbage(event) {
     // Get the moveableButton element
     const moveableButton = document.getElementById('moveableButton');
     
+    // Get the current top position of the button relative to the viewport
+    const buttonTop = moveableButton.getBoundingClientRect().top;
+    
     // Check if the mouse position is different from the current top position of the button
-    if (mouseX < parseInt(moveableButton.style.top)) {
-        // Update the top position of the button
-        moveableButton.style.top = (mouseX + 3) + "px"; // Increment the position by 10 pixels
+    if (mouseY < buttonTop) {
+        // Update the top position of the button to move it downward
+        moveableButton.style.top = (buttonTop + 3) + "px"; // Increment the position by 3 pixels
     } else {
-    moveableButton.style.top = (mouseX + -3) + "px"; 
+        // Update the top position of the button to move it upward
+        moveableButton.style.top = (buttonTop - 3) + "px"; // Decrement the position by 3 pixels
     }
 }
 
