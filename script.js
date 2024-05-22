@@ -18,11 +18,11 @@ function garbage(event) {
     
     // Check if the mouse position is to the left of the button
     if (mouseX < buttonLeft) {
-        // Update the top position of the button to move it downward
-        moveableButton.style.top = (mouseY + 3) + "px"; // Move downward
-    } else {
         // Update the top position of the button to move it upward
         moveableButton.style.top = (mouseY - 3) + "px"; // Move upward
+    } else {
+        // Update the top position of the button to move it downward
+        moveableButton.style.top = (mouseY + 3) + "px"; // Move downward
     }
 }
 
