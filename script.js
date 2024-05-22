@@ -4,7 +4,10 @@ function colorChange() {
     document.body.style.backgroundColor = "#" + colorValue;
 }
 
-
+if (colorValue == 69420)
+{
+console.log("what the fuck");
+}
 
 function moveButton(event) {
     const mouseX = event.clientX;
