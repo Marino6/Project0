@@ -1,14 +1,11 @@
- var colorInput = document.getElementById('color');
-    var colorValue = colorInput.value;
+
 function colorChange() {
-   
+    var colorInput = document.getElementById('color');
+    var colorValue = colorInput.value;
     document.body.style.backgroundColor = "#" + colorValue;
 }
 
-if (colorValue == 69420)
-{
-console.log("what the fuck");
-}
+console.log("great");
 
 function garbage()
 {
