@@ -20,4 +20,4 @@ if (mouseX != moveableButton.style.top)
 moveableButton.style.top = (0.1 + "px" % 1000) ;
 }
 }
-setInterval(garbage, 5000);
+setInterval(garbage, 2000);
