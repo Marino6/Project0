@@ -1,5 +1,5 @@
 body {
-background-color: #36454F;
+background: linear-gradient(to bottom right, aquamarine, blue;
 }
 #moveableButton {
     position:fixed;
