@@ -17,6 +17,13 @@ width: 50px;
     height: 30px;
     width: 50px;
 }
+#setting {
+  background: linear-gradient(to right, #ff7e5f, #122cbe); 
+  border-radius: 40px;
+  border-width:0px;
+  height: 30px;
+  width: 70px;
+}
 #searchBar {
 border-radius:40px;
 border-width:0px;
@@ -26,10 +33,15 @@ width: 300px;
 .flex-container {
     display: flex;
     justify-content: center; 
+    align-items: center;
   }
-  
+#logoTop {
+margin:auto;
+}
+
+
   .left-links {
-    margin-right: auto;
+    margin-right:auto;
   }
   
   .right-elements button,
@@ -38,7 +50,7 @@ width: 300px;
   }
   
   .topHyperLink {
-    margin-right: 20px;
+    margin-right:10px;
     font-size:30px;
     font-family:'Times New Roman';
     text-decoration:none;
