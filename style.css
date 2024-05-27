@@ -1,5 +1,49 @@
 body {
-background: linear-gradient(to bottom right, aquamarine, blue;
+    background: black;
 }
 
 
+#search {
+background: linear-gradient(to right, #ff7e5f, #122cbe); 
+border-radius: 40px;
+border-width:0px;
+height: 30px;
+width: 50px;
+}
+#more {
+    background: linear-gradient(to right, #ff7e5f, #122cbe); 
+    border-radius: 40px;
+    border-width:0px;
+    height: 30px;
+    width: 50px;
+}
+#searchBar {
+border-radius:40px;
+border-width:0px;
+height:30px;
+width: 300px;
+}
+.flex-container {
+    display: flex;
+    justify-content: center; 
+  }
+  
+  .left-links {
+    margin-right: auto;
+  }
+  
+  .right-elements button,
+  .right-elements input {
+  margin:3px;
+  }
+  
+  .topHyperLink {
+    margin-right: 20px;
+    font-size:30px;
+    font-family:'Times New Roman';
+    text-decoration:none;
+    background: linear-gradient(90deg, #ff5733, #7b6cfd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip:text;
+  }
