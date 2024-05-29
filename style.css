@@ -17,6 +17,27 @@ width: 50px;
     height: 30px;
     width: 50px;
 }
+
+
+#search:hover {
+background: linear-gradient(to right, #ff7e5f, #122cbe); 
+border-radius: 40px;
+border-width:0px;
+height: 40px;
+width: 60px;
+transition:0.5s ease 0.2s, transform 0.3s ease;
+}
+
+#more:hover {
+    background: linear-gradient(to right, #ff7e5f, #122cbe); 
+    border-radius: 40px;
+    border-width:0px;
+    height: 40px;
+    width: 60px;
+    transition:0.5s ease 0.2s, transform 0.3s ease;
+
+}
+
 #setting {
   background: linear-gradient(to right, #ff7e5f, #122cbe); 
   border-radius: 40px;
@@ -25,11 +46,14 @@ width: 50px;
   height: 30px;
   width: 70px;
 }
-#searchBar {
-border-radius:40px;
-border-width:0px;
-height:30px;
-width: 300px;
+
+#setting;hover {
+  background: linear-gradient(to right, #ff7e5f, #122cbe); 
+  border-radius: 40px;
+  transition:0.5s ease 0.2s, transform 0.3s ease;
+  border-width:0px;
+  height: 40px;
+  width: 80px;
 }
 
 .flex-container {
@@ -80,6 +104,16 @@ margin:auto;
     height: 30px;
     width: 240px;
     margin-left:10px;
+  }
+
+  .buton:hover {
+    background: linear-gradient(to right, #ff7e5f, #122cbe); 
+    border-radius: 40px;
+    border-width:0px;
+    height: 20px;
+    width: 230px;
+    margin-left:10px;
+    transition:0.5s ease 0.2s, transform 0.3s ease;
   }
   
   .topHyperLink {
