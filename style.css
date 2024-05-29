@@ -26,6 +26,7 @@ border-width:0px;
 height: 30px;
 width: 60px;
 transition:0.5s ease 0.2s, transform 0.3s ease;
+transform-origin:center;
 }
 
 #more:hover {
@@ -35,6 +36,7 @@ transition:0.5s ease 0.2s, transform 0.3s ease;
     height: 30px;
     width: 60px;
     transition:0.5s ease 0.2s, transform 0.3s ease;
+    transform-origin:center;
 
 }
 
@@ -53,6 +55,7 @@ transition:0.5s ease 0.2s, transform 0.3s ease;
   border-width:0px;
   height: 30px;
   width: 80px;
+  transform-origin:center;
 }
 
 .flex-container {
@@ -103,6 +106,7 @@ margin:auto;
     height: 30px;
     width: 240px;
     margin-left:10px;
+    transform-origin:center;
   }
 
   .buton:hover {
