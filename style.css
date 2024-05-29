@@ -23,7 +23,7 @@ width: 50px;
 background: linear-gradient(to right, #ff7e5f, #122cbe); 
 border-radius: 40px;
 border-width:0px;
-height: 40px;
+height: 30px;
 width: 60px;
 transition:0.5s ease 0.2s, transform 0.3s ease;
 }
@@ -32,7 +32,7 @@ transition:0.5s ease 0.2s, transform 0.3s ease;
     background: linear-gradient(to right, #ff7e5f, #122cbe); 
     border-radius: 40px;
     border-width:0px;
-    height: 40px;
+    height: 30px;
     width: 60px;
     transition:0.5s ease 0.2s, transform 0.3s ease;
 
@@ -41,7 +41,6 @@ transition:0.5s ease 0.2s, transform 0.3s ease;
 #setting {
   background: linear-gradient(to right, #ff7e5f, #122cbe); 
   border-radius: 40px;
-
   border-width:0px;
   height: 30px;
   width: 70px;
@@ -52,7 +51,7 @@ transition:0.5s ease 0.2s, transform 0.3s ease;
   border-radius: 40px;
   transition:0.5s ease 0.2s, transform 0.3s ease;
   border-width:0px;
-  height: 40px;
+  height: 30px;
   width: 80px;
 }
 
@@ -110,7 +109,7 @@ margin:auto;
     background: linear-gradient(to right, #ff7e5f, #122cbe); 
     border-radius: 40px;
     border-width:0px;
-    height: 20px;
+    height: 30px;
     width: 230px;
     margin-left:10px;
     transition:0.5s ease 0.2s, transform 0.3s ease;
