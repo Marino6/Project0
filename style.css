@@ -24,9 +24,10 @@ background: linear-gradient(to right, #ff7e5f, #122cbe);
 border-radius: 40px;
 border-width:0px;
 height: 30px;
-width: 60px;
+width: 50px;
 transition:0.5s ease 0.2s, transform 0.3s ease;
 transform-origin:center;
+transform: scaleX(1.5);
 }
 
 #more:hover {
@@ -34,9 +35,10 @@ transform-origin:center;
     border-radius: 40px;
     border-width:0px;
     height: 30px;
-    width: 60px;
+    width: 50px;
     transition:0.5s ease 0.2s, transform 0.3s ease;
     transform-origin:center;
+    transform: scaleX(1.5);
 
 }
 
@@ -54,8 +56,9 @@ transform-origin:center;
   transition:0.5s ease 0.2s, transform 0.3s ease;
   border-width:0px;
   height: 30px;
-  width: 80px;
+  width: 70px;
   transform-origin:center;
+  transform: scaleX(1.5); 
 }
 
 .flex-container {
