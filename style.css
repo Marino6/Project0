@@ -9,6 +9,7 @@ border-radius: 40px;
 border-width:0px;
 height: 30px;
 width: 50px;
+transition: 0.2s linear;
 }
 #more {
     background: linear-gradient(to right, #ff7e5f, #122cbe); 
@@ -16,15 +17,16 @@ width: 50px;
     border-width:0px;
     height: 30px;
     width: 50px;
+    transition: 0.2s linear;
 }
 
 
 #search:hover {
-  color:#F2F2F2;
+  color:#ddd3d3;
 }
 
 #more:hover {
-  color:#F2F2F2;
+  color:#ddd3d3;
   }
 
 #setting {
@@ -33,10 +35,11 @@ width: 50px;
   border-width:0px;
   height: 30px;
   width: 70px;
+  transition: 0.2s linear;
 }
 
 #setting:hover {
-color:#F2F2F2;
+color:#ddd3d3;
 }
 
 .flex-container {
@@ -66,16 +69,18 @@ margin:auto;
   .left-links {
     margin-right:auto;
   }
-  
+
   .right-elements button,
-  .right-elements input {
+  .right-elements rightSideHyperLink {
   margin:3px;
   }
+
+
+  
   #inputChange {
-    width:250px;
-    height:20px;
+    width:200px;
+    height:15px;
     border-radius:40px;
-    margin-left:4px;
     margin-top:10px;
     border:none;
   }
@@ -84,16 +89,21 @@ margin:auto;
     background: linear-gradient(to right, #ff7e5f, #122cbe); 
     border-radius: 40px;
     border-width:0px;
-    height: 30px;
-    width: 240px;
-    margin-left:10px;
-    transform-origin:center;
+    height: 20px;
+    width: 200px;
+    justify-content:center;
+    transition: 0.2s linear;
   }
 
   .buton:hover {
-  color:#F2F2F2;
+  color:#ddd3d3;
   }
   
+  .rightSideHyperLink {
+    color:white;
+    text-decoration:none;
+  }
+
   .topHyperLink {
     margin-right:10px;
     font-size:30px;
@@ -106,18 +116,18 @@ margin:auto;
   }
 
   .sidebar {
-    width: 260px; /* Adjust the width as needed */
+    width: 220px; /* Adjust the width as needed */
     display:flex;
     flex-direction:column;
     height: 100vh; /* Full height of the viewport */
     background:#121213;
     gap:10px;
     position: fixed;
-    align-items:top;
+    align-items:center;
     justify-content:top;
     top: 0;
     left: -260px; /* Initially hide the sidebar off the screen */
-    transition: left 0.09s ease; /* Add smooth transition */
+    transition: 0.04s linear; /* Add smooth transition */
 }
 
 .sidebar.active {
