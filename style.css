@@ -48,6 +48,7 @@ color:#ddd3d3;
     justify-content: center; 
     align-items: center;
     background:#161616;
+    flex-wrap:wrap;
 }
 .container {
 display:flex;
@@ -73,13 +74,14 @@ margin:auto;
   .right-elements button,
   .right-elements rightSideHyperLink {
   margin:3px;
+  flex:wrap;
   }
 
 
   
   #inputChange {
     width:200px;
-    height:15px;
+    height:25px;
     border-radius:40px;
     margin-top:10px;
     border:none;
@@ -89,7 +91,7 @@ margin:auto;
     background: linear-gradient(to right, #ff7e5f, #122cbe); 
     border-radius: 40px;
     border-width:0px;
-    height: 20px;
+    height: 30px;
     width: 200px;
     justify-content:center;
     transition: 0.2s linear;

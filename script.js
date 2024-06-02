@@ -1,43 +1,34 @@
-let that = 0; 
-
-function Search() 
-{
-    var searchText = document.getElementById("searchBar").value.toLowerCase();
+var that = 0;
+function Search() {
+    var searchBar = document.getElementById("searchBar");
+    var searchText = searchBar.value.toLowerCase();
     var content = document.getElementById("letter").innerHTML;
-  
     // Create a regular expression pattern to match the search text
     var pattern = new RegExp(searchText, 'gi');
-  
     // Replace the matched text with italicized text
-    var replacedContent = content.replace(pattern, function(match) {
-      return '<i>' + match + '</i>';
+    var replacedContent = content.replace(pattern, function (match) {
+        return '<i>' + match + '</i>';
     });
-  
     // Update the HTML content with the replaced text
     document.getElementById("letter").innerHTML = replacedContent;
 }
-
-function change() 
-{
-    let fun = document.getElementById('search');
-    let fan = document.getElementById('more');
-    let fin = document.getElementById('setting');
+function change() {
+    var fun = document.getElementById('search');
+    var fan = document.getElementById('more');
+    var fin = document.getElementById('setting');
     var what = (that + 1) % 360;
-    fun.style.background = `linear-gradient(${what}deg, #ff7e5f, #122cbe)`;
-    fan.style.background = `linear-gradient(${(what + 30) % 360}deg, #ff7e5f, #122cbe)`;
-    fin.style.background = `linear-gradient(${(what + 60) % 360}deg, #ff7e5f, #122cbe)`;
+    fun.style.background = "linear-gradient(".concat(what, "deg, #ff7e5f, #122cbe)");
+    fan.style.background = "linear-gradient(".concat((what + 30) % 360, "deg, #ff7e5f, #122cbe)");
+    fin.style.background = "linear-gradient(".concat((what + 60) % 360, "deg, #ff7e5f, #122cbe)");
     that++;
 }
-function pop()
-{
+function pop() {
     var sidebar = document.getElementById("sidebar");
     sidebar.classList.toggle("active");
 }
-function changer()
-{
-var input = document.getElementById("inputChange");
-var value = input.value;
-document.body.style.backgroundColor = value;
+function changer() {
+    var input = document.getElementById("inputChange");
+    var value = input.value;
+    document.body.style.backgroundColor = value;
 }
-
 setInterval(change, 10);
