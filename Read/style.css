@@ -1,0 +1,137 @@
+body {
+    background: black;
+}
+
+
+#search {
+background: linear-gradient(to right, #ff7e5f, #122cbe); 
+border-radius: 40px;
+border-width:0px;
+height: 30px;
+width: 50px;
+transition: 0.2s linear;
+}
+#more {
+    background: linear-gradient(to right, #ff7e5f, #122cbe); 
+    border-radius: 40px;
+    border-width:0px;
+    height: 30px;
+    width: 50px;
+    transition: 0.2s linear;
+}
+
+
+#search:hover {
+  color:#ddd3d3;
+}
+
+#more:hover {
+  color:#ddd3d3;
+  }
+
+#setting {
+  background: linear-gradient(to right, #ff7e5f, #122cbe); 
+  border-radius: 40px;
+  border-width:0px;
+  height: 30px;
+  width: 70px;
+  transition: 0.2s linear;
+}
+
+#setting:hover {
+color:#ddd3d3;
+}
+
+.flex-container {
+    display: flex;
+    height:40px;
+    justify-content: center; 
+    align-items: center;
+    background:#161616;
+    flex-wrap:wrap;
+}
+.container {
+display:flex;
+align-items:center;
+justify-content:center;
+margin-top:50px;
+
+}
+.text {
+color:white;
+width:700px;
+}
+
+#logoTop {
+margin:auto;
+}
+
+
+  .left-links {
+    margin-right:auto;
+  }
+
+  .right-elements button,
+  .right-elements rightSideHyperLink {
+  margin:3px;
+  flex:wrap;
+  }
+
+
+  
+  #inputChange {
+    width:200px;
+    height:25px;
+    border-radius:40px;
+    margin-top:10px;
+    border:none;
+  }
+
+    .buton {
+    background: linear-gradient(to right, #ff7e5f, #122cbe); 
+    border-radius: 40px;
+    border-width:0px;
+    height: 30px;
+    width: 200px;
+    justify-content:center;
+    transition: 0.2s linear;
+  }
+
+  .buton:hover {
+  color:#ddd3d3;
+  }
+  
+  .rightSideHyperLink {
+    color:white;
+    text-decoration:none;
+  }
+
+  .topHyperLink {
+    margin-right:10px;
+    font-size:30px;
+    font-family:'Times New Roman';
+    text-decoration:none;
+    background: linear-gradient(90deg, #ff5733, #7b6cfd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip:text;
+  }
+
+  .sidebar {
+    width: 220px; /* Adjust the width as needed */
+    display:flex;
+    flex-direction:column;
+    height: 100vh; /* Full height of the viewport */
+    background:#121213;
+    gap:10px;
+    position: fixed;
+    align-items:center;
+    justify-content:top;
+    top: 0;
+    left: -260px; /* Initially hide the sidebar off the screen */
+    transition: 0.04s linear; /* Add smooth transition */
+}
+
+.sidebar.active {
+    left: 0; /* Move sidebar to the left when active */
+}
