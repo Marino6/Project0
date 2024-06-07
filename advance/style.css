@@ -1,9 +1,13 @@
-.selector {
+.select {
 display:flex;
 flex-direction:column;
 background:linear-gradient(to right, green, blue);
 color:white;
 width:600px;
 height:900px;
+}
+
+.body {
+background:black;
 }
 
